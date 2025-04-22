@@ -1,0 +1,261 @@
+/*頁首樣式*/
+.hero-header {
+  position: relative;
+  background-image: url('images/1-1.jpg'); /* 用本地圖片 */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-header .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* 遮罩 */
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ffeaa7;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #dfe6e9;
+}
+
+.photo-credit {
+  font-size: 0.9rem;
+  color: #b2bec3;
+}
+
+.photo-credit a {
+  color: #fab1a0;
+  text-decoration: none;
+}
+
+.photo-credit a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/*時間軸樣式*/
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .timeline-item {
+    border-left: 4px solid #444;
+    padding: 1rem;
+    background: #faeec5;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .timeline-item:hover {
+    background: #e0e0e0;
+  }
+  
+  .timeline-date {
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .timeline-content {
+    margin-top: 0.5rem;
+    display: none;
+    color: #333;
+  }
+  
+  .timeline-item.active .timeline-content {
+    display: block;
+  }
+
+ 
+  /*目錄樣式*/
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #222;
+    color: white;
+    width: 200px;
+    height: 100%;
+    padding-top: 60px;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 20px;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hidden {
+    transform: translateX(-100%);
+  }
+  
+  .toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    font-size: 1.5rem;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+
+/*修正目錄問題*/
+  body:not(.sidebar-open) .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  body.sidebar-open {
+    padding-left: 200px; /* 與 sidebar 寬度一致 */
+  }
+  
+
+
+/*背景顏色*/
+
+  section {
+    padding: 60px 20px;
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  #intro {
+    background: #ecdec1;
+  }
+  
+  #timeline {
+    background: #e7c989;
+  }
+  
+  #behind {
+    background: #e7d5b2;
+  }
+  
+  #impact {
+    background: #f3ce7f;}
+
+
+
+/*時間軸左側添加直線和圓點*/
+    .timeline-item {
+      position: relative;
+      padding-left: 40px;
+      border-left: 2px solid #636e72;
+    }
+    
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  background: #2d3436;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+    
+
+
+/*美化footer*/
+footer {
+  background: #2d3436;
+  color: #dfe6e9;
+  text-align: center;
+  padding: 20px 0;
+}
+.site-footer {
+  background: #2d3436;
+  color: #dfe6e9;
+  padding: 30px 20px;
+  font-size: 1px;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-left {
+  flex: 1 1 300px;
+  text-align: left; /* 新增這一行，強制左對齊 */
+  font-size: 12px;
+}
+.footer-left h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fab1a0;
+}
+
+.footer-left ul {
+  
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+
+.footer-right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+
+    

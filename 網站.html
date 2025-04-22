@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小心月台與車廂間的「奉系」</title>
+    <link rel="stylesheet" href="網站樣式.css">
+</head>
+<body>
+    <nav id="sidebar" class="sidebar hidden">
+        <ul>
+          <li><a href="#intro">網站簡介</a></li>
+          <li><a href="#timeline">事件經過</a></li>
+          <li><a href="#behind">幕後主謀</a></li>
+          <li><a href="#impact">影響與後續</a></li>
+        </ul>
+    </nav>      
+    <header class="hero-header">
+        <div class="overlay">
+          <h1 class="main-title">小心月台與車廂間的「奉系」</h1>
+          <p class="subtitle">一場鐵道炸彈，改寫中國命運的歷史轉折</p>
+          <div class="photo-credit">
+            Photo by 
+            <a href="https://unsplash.com/@andrewtneel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Andrew Neel</a> on 
+            <a href="https://unsplash.com/photos/maps-lying-on-the-floor-1-29wyvvLJA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+          </div>
+        </div>
+    </header>
+    <section id="intro">
+        <h2>網站簡介</h2>
+        <p>本網站將歷史故事和網頁設計互相結合，將帶著各位認識1928年震撼中國政壇的皇姑屯事件。網站使用 HTML 和 CSS 製作清楚有條理的網站版面，並透過 JavaScript 加入互動的時間軸，讓大家能夠一步步了解事件經過。此外，也採用響應式網頁技術，無論是電腦、平板還是手機，都能有方便舒適的閱讀體驗。
+        </p>
+    </section>
+    <section id="timeline" class="timeline">
+        <h2>皇姑屯事件時間軸</h2>
+        <p>皇姑屯事件發生之前：1928年春夏，國民政府發動第二次北伐，迅速擊敗奉系軍閥，兵臨京津地區。面對奉軍潰敗、軍心渙散的局勢，將領張學良、楊宇霆等人希望與國民政府談判，張作霖則察覺情勢不利，準備自北京撤退返回東北。
+        <div class="timeline-container">
+        <div class="timeline-item" onclick="toggleDetails(this)">
+            <div class="timeline-date">1928年6月3日 晚間</div>
+            <div class="timeline-title">張作霖專列離開北京</div>
+            <div class="timeline-content">奉軍節節敗退，張作霖通電求和後，自北京返回瀋陽。</div>
+        </div>
+        <div class="timeline-item" onclick="toggleDetails(this)">
+            <div class="timeline-date">1928年6月4日 凌晨5:30</div>
+            <div class="timeline-title">爆炸發生</div>
+            <div class="timeline-content">張作霖專列行經皇姑屯時遭炸，重傷，吳俊升當場死亡。</div>
+        </div>
+        <div class="timeline-item" onclick="toggleDetails(this)">
+            <div class="timeline-date">1928年6月4日 上午9:30</div>
+            <div class="timeline-title">張作霖逝世</div>
+            <div class="timeline-content">張作霖傷重不治，於瀋陽帥府中逝世。</div>
+        </div>
+        </div>
+
+    </section>
+    <section id="behind" class="behind">
+        <h2>幕後主謀是誰？北洋政府與蘇俄及日本之間的關係</h2>
+        <P>
+            張作霖與日本當局的關係複雜微妙，他在初期靠日本的支持，成為奉系軍閥首領，並多次靠日軍穩固政權。
+            然而，張作霖不願淪為日本傀儡，轉而逐漸與英美接近，疏遠日本。張作霖與日本當局之間的矛盾日益嚴重。
+            最終6月4日清晨，張作霖乘坐的專列行經瀋陽皇姑屯時遭日本關東軍預埋炸彈襲擊，張作霖重傷身亡</p>
+        <p>*河本大作在自己死後出版了一本名為《我殺死了張作霖》的供詞、回憶錄性質的史料，在這本史料中，他十分清楚而具體地供述了自己策劃、安排、指揮炸死張作霖的整個過程。 </p>
+        <p>
+            蘇共在十月革命後發表《蘇俄第一次對華宣言》，然而該宣言送達中國政府一年後，卻否認中國政府收到的文本是正式文本。爭議點主要在於是否承諾「無償歸還中東鐵路」，該問題爭論多年。
+            其後中華民國北洋政府與蘇聯簽訂了《中俄解決懸案大綱協定》，規定了中東鐵路為商業性質、非中國主權例外，相關主權事務由中國負責及中國得以贖回中東鐵路及其資產等。
+            1924年9月，張作霖控制的東北政府又和蘇俄簽署了《奉俄協定》，將中東鐵路歸還期限縮短了二十年。
+            然而蘇俄違約獨吞鐵路盈利。張作霖對此極其不滿，拒交鐵路使用的相關費用，並拘捕了俄方鐵路局長，實際控制了中東鐵路。此舉嚴重威脅蘇俄利益。
+            1928年6月4日，蘇共特務在皇姑屯炸死張作霖，並且把這個黑鍋扣在了日本人頭上。</p>
+        <p>*俄國作家普羅霍羅夫據此撰寫了《張作霖元帥之死檔案》，但是中共不予承認。</P>
+    </section>
+    <section id="impact">
+        <h2>事件影響與後續發展</h2>
+        <p>1928年6月4日的皇姑屯事件中，東北軍統帥張作霖於上午9時30分傷重去世，但消息被刻意保密，未立即對外發喪。
+            其子張學良迅速從前線趕回，於6月18日抵達瀋陽，成功穩定東北局勢，直至6月21日正式繼承父職後，才對外公布張作霖逝世的消息。
+            張作霖的死亡造成東北軍內部出現權力真空，引發激烈的政治鬥爭與軍事衝突，原本忠誠的部下爭奪地盤與勢力，嚴重削弱東北軍的戰鬥力，為日本侵略中國提供了可乘之機。
+            皇姑屯事件被普遍認為是日本侵華的起點，不僅直接加速了九一八事變的爆發，也為之後的全面抗日戰爭埋下伏筆。</p>
+        <p>綜觀而言，皇姑屯事件的發生對中國政局產生了深遠影響，不僅改變了東北軍的命運，也影響了整個中國的歷史進程。</p>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <h3>資料來源</h3>
+            <ul>
+              <li>維基百科 - 皇姑屯事件</li>
+              <li>維基百科 - 蘇俄對華宣言</li>
+              <li>維基文庫 - 中俄解決懸案大綱協定</li>
+              <li>關樂：皇姑屯事件真相 | 張作霖 | 大紀元</li>
+              <li>揭秘“皇姑屯事件”：始末、动机与余波 - 抗日战争纪念网</li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <p>© 2025 小心月台與車廂間的「奉系」</p>
+          </div>
+        </div>
+      </footer>
+      
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">☰ 目錄</button>
+    <script src="網站互動和響應式設計.js"></script>
+</body>
+</html>
